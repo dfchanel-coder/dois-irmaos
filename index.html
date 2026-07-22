@@ -3,7 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruteira Dois Irmãos | Fresh Fruits</title>
+    <title>Fruteira Dois Irmãos | Atacado e Varejo de Frutas e Verduras</title>
+    
+    <!-- ========================================== -->
+    <!-- 🚀 SUPER SEO BÁSICO (Google & Bing)        -->
+    <!-- ========================================== -->
+    <meta name="description" content="Fruteira Dois Irmãos - Distribuidora de Frutas, Legumes e Verduras. Atacado, varejo e exportação. Do campo direto para a sua mesa em Sant'Ana do Livramento. Delivery rápido e qualidade garantida.">
+    <meta name="keywords" content="fruteira, frutas, verduras, legumes, atacado, varejo, exportação, Sant'Ana do Livramento, Rivera, alimentos frescos, delivery de frutas, fruteira dois irmaos, distribuidora de alimentos">
+    <meta name="author" content="FB Informatica">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="Portuguese">
+    
+    <!-- ========================================== -->
+    <!-- 📱 OPEN GRAPH (Facebook, WhatsApp, Linked) -->
+    <!-- ========================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fruteira Dois Irmãos | Fresh Fruits">
+    <meta property="og:description" content="Alimentos 100% frescos. Abastecemos restaurantes, mercados e empresas. Delivery em Sant'Ana do Livramento e Rivera.">
+    <!-- Podés cambiar la URL de og:image por el logo o foto real del local -->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="es_UY">
+    
+    <!-- ========================================== -->
+    <!-- 🐦 TWITTER CARDS                           -->
+    <!-- ========================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fruteira Dois Irmãos | Fresh Fruits">
+    <meta name="twitter:description" content="Distribuidora de Frutas, Legumes e Verduras. Qualidade, variedade e preço justo!">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- ========================================== -->
+    <!-- 🏢 SCHEMA MARKUP JSON-LD (SEO LOCAL AVANZADO) -->
+    <!-- ========================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GroceryStore",
+      "name": "Fruteira Dois Irmãos",
+      "image": "https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "description": "Distribuidora de Frutas e Verduras. Atacado, varejo e exportação. Abastecemos restaurantes, mercados, escolas e empresas.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Paul Harris, 340 - Centro",
+        "addressLocality": "Sant'Ana do Livramento",
+        "addressRegion": "RS",
+        "addressCountry": "BR"
+      },
+      "telephone": "+55984098598",
+      "priceRange": "$$",
+      "sameAs": [
+        "https://instagram.com/fruteira_dois_irmaos",
+        "https://www.facebook.com/fruteiradoisirmaos"
+      ]
+    }
+    </script>
+
+    <!-- Tailwind & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script>
@@ -41,10 +97,19 @@
                         <span class="text-xs font-semibold text-brandLightGreen tracking-wider uppercase">Fresh Fruits</span>
                     </div>
                 </div>
-                <!-- Language Switcher -->
-                <div class="flex space-x-2 bg-white/20 rounded-full p-1">
-                    <button onclick="setLanguage('pt')" id="btn-pt" class="px-4 py-1 rounded-full text-sm font-bold bg-white text-brandGreen transition-all shadow">PT</button>
-                    <button onclick="setLanguage('es')" id="btn-es" class="px-4 py-1 rounded-full text-sm font-medium text-white hover:bg-white/30 transition-all">ES</button>
+                
+                <div class="flex items-center gap-5">
+                    <!-- Instagram Button Header -->
+                    <a href="https://instagram.com/fruteira_dois_irmaos" target="_blank" aria-label="Siga-nos no Instagram" class="hidden sm:flex items-center gap-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white px-3 py-1.5 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow-md">
+                        <i class="fab fa-instagram text-lg"></i>
+                        <span>Instagram</span>
+                    </a>
+
+                    <!-- Language Switcher -->
+                    <div class="flex space-x-2 bg-white/20 rounded-full p-1">
+                        <button onclick="setLanguage('pt')" id="btn-pt" class="px-4 py-1 rounded-full text-sm font-bold bg-white text-brandGreen transition-all shadow">PT</button>
+                        <button onclick="setLanguage('es')" id="btn-es" class="px-4 py-1 rounded-full text-sm font-medium text-white hover:bg-white/30 transition-all">ES</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,21 +122,23 @@
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 flex flex-col-reverse lg:flex-row items-center gap-12">
             
             <div class="w-full lg:w-1/2 text-center lg:text-left z-10">
-                <span class="inline-block py-1 px-3 rounded-full bg-brandLightGreen text-white text-sm font-bold mb-4 uppercase tracking-wide" data-i18n="badge_atacado">Atacado | Varejo | Exportação</span>
+                <span class="inline-block py-1 px-3 rounded-full bg-brandLightGreen text-white text-sm font-bold mb-4 uppercase tracking-wide shadow-sm" data-i18n="badge_atacado">Atacado | Varejo | Exportação</span>
                 <h1 class="text-5xl lg:text-6xl font-extrabold mb-6 leading-tight" data-i18n="hero_title">
                     Temos tudo <br><span class="text-brandOrange">o que você precisa</span>
                 </h1>
                 <p class="text-lg lg:text-xl mb-8 opacity-90 font-medium" data-i18n="hero_desc">
                     Abastecemos restaurantes, mercados, escolas e empresas com frutas, legumes e verduras selecionados.
                 </p>
-                <a href="#contato" class="inline-flex items-center gap-2 bg-brandOrange hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 text-lg">
-                    <i class="fab fa-whatsapp text-2xl"></i>
-                    <span data-i18n="btn_pedir">Peça pelo nosso WhatsApp</span>
-                </a>
+                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                    <a href="#contato" class="inline-flex items-center gap-2 bg-brandOrange hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 text-lg w-full sm:w-auto justify-center">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <span data-i18n="btn_pedir">Peça pelo nosso WhatsApp</span>
+                    </a>
+                </div>
             </div>
 
             <div class="w-full lg:w-1/2 relative z-10">
-                <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Frutas frescas" class="rounded-3xl shadow-2xl border-4 border-white/20 transform rotate-2 hover:rotate-0 transition-all duration-300">
+                <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Caixa com Frutas e verduras frescas de alta qualidade" class="rounded-3xl shadow-2xl border-4 border-white/20 transform rotate-2 hover:rotate-0 transition-all duration-300">
                 
                 <!-- Floating Badges -->
                 <div class="absolute -right-4 top-10 bg-white text-brandGreen font-bold py-2 px-4 rounded-xl shadow-xl flex items-center gap-2 animate-bounce">
@@ -89,7 +156,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="w-full md:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Supermercado" class="rounded-3xl shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interior de supermercado e fruteira organizada" class="rounded-3xl shadow-xl">
                 </div>
                 <div class="w-full md:w-1/2">
                     <h2 class="text-4xl font-extrabold text-brandGreen mb-6 leading-tight" data-i18n="about_title">Enche o carrinho mas não esvazia o bolso!</h2>
@@ -128,8 +195,7 @@
                         <li class="flex items-center gap-3 text-lg font-medium"><i class="fa-solid fa-check-circle text-brandOrange"></i> <span data-i18n="feat_dedicacao">Qualidade, variedade e muita dedicação envolvida</span></li>
                     </ul>
                 </div>
-                <div class="w-full md:w-1/2 h-full min-h-[400px] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1590779033100-9f60a05a013d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
-                    <!-- Delivery image representation -->
+                <div class="w-full md:w-1/2 h-full min-h-[400px] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1590779033100-9f60a05a013d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');" aria-label="Caminhão de entrega de alimentos frescos">
                 </div>
             </div>
         </div>
@@ -150,10 +216,10 @@
                 </div>
                 <p class="mb-6" data-i18n="footer_desc">Distribuidora de Frutas e Verduras.<br>Atacado, varejo e exportação.</p>
                 <div class="flex space-x-4">
-                    <a href="https://instagram.com/fruteira_dois_irmaos" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brandOrange transition-colors text-white">
-                        <i class="fab fa-instagram"></i>
+                    <a href="https://instagram.com/fruteira_dois_irmaos" target="_blank" aria-label="Instagram" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gradient-to-r hover:from-pink-500 hover:to-orange-400 transition-all text-white">
+                        <i class="fab fa-instagram text-lg"></i>
                     </a>
-                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brandOrange transition-colors text-white">
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors text-white">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </div>
@@ -163,13 +229,13 @@
             <div>
                 <h4 class="text-white text-lg font-bold mb-6 uppercase tracking-wider" data-i18n="footer_contact_title">Faça seu pedido</h4>
                 <div class="space-y-4">
-                    <a href="https://wa.me/5555984098598" target="_blank" class="flex items-center gap-4 bg-gray-800 p-3 rounded-lg hover:bg-gray-700 transition-colors">
-                        <img src="https://flagcdn.com/w20/br.png" alt="BR" class="w-6 rounded-sm">
+                    <a href="https://wa.me/5555984098598" target="_blank" class="flex items-center gap-4 bg-gray-800 p-3 rounded-lg hover:bg-gray-700 transition-colors shadow-sm">
+                        <img src="https://flagcdn.com/w20/br.png" alt="Brasil" class="w-6 rounded-sm shadow-sm">
                         <span class="font-medium">(55) 98409 - 8598</span>
                         <i class="fab fa-whatsapp text-green-500 ml-auto text-xl"></i>
                     </a>
-                    <a href="https://wa.me/59895086695" target="_blank" class="flex items-center gap-4 bg-gray-800 p-3 rounded-lg hover:bg-gray-700 transition-colors">
-                        <img src="https://flagcdn.com/w20/uy.png" alt="UY" class="w-6 rounded-sm">
+                    <a href="https://wa.me/59895086695" target="_blank" class="flex items-center gap-4 bg-gray-800 p-3 rounded-lg hover:bg-gray-700 transition-colors shadow-sm">
+                        <img src="https://flagcdn.com/w20/uy.png" alt="Uruguai" class="w-6 rounded-sm shadow-sm">
                         <span class="font-medium">(+598) 95 086 695</span>
                         <i class="fab fa-whatsapp text-green-500 ml-auto text-xl"></i>
                     </a>
@@ -183,15 +249,22 @@
                     <i class="fa-solid fa-map-location-dot text-brandOrange mt-1"></i>
                     <span>Av. Paul Harris, 340 - Centro<br>Sant'Ana do Livramento</span>
                 </p>
-                <a href="https://maps.google.com/?q=Av.+Paul+Harris,+340+-+Centro,+Sant'Ana+do+Livramento" target="_blank" class="inline-block border border-gray-600 hover:border-brandOrange hover:text-brandOrange px-6 py-2 rounded-full transition-colors font-medium text-sm" data-i18n="btn_map">
+                <a href="https://maps.google.com/?q=Av.+Paul+Harris,+340+-+Centro,+Sant'Ana+do+Livramento" target="_blank" class="inline-block border border-gray-600 hover:border-brandOrange hover:text-brandOrange px-6 py-2 rounded-full transition-colors font-medium text-sm shadow-sm" data-i18n="btn_map">
                     Ver no Mapa
                 </a>
             </div>
         </div>
         
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; 2026 Fruteira Dois Irmãos. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
-            <p class="mt-2 md:mt-0">Desenvolvido com <i class="fa-solid fa-heart text-brandOrange text-xs mx-1"></i></p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm">
+            <p class="text-gray-500">&copy; 2026 Fruteira Dois Irmãos. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
+            
+            <!-- Firma FB Informatica -->
+            <p class="mt-4 md:mt-0 text-gray-400">
+                <span data-i18n="footer_developed">Desenvolvido por</span> 
+                <a href="https://www.fbinformaticauy.com" target="_blank" class="text-brandOrange hover:text-white font-bold transition-colors ml-1 uppercase tracking-wide">
+                    FB Informatica
+                </a>
+            </p>
         </div>
     </footer>
 
@@ -220,7 +293,8 @@
                 footer_contact_title: "Faça seu pedido",
                 footer_location_title: "Estamos localizados em",
                 btn_map: "Ver no Mapa",
-                footer_rights: "Todos os direitos reservados."
+                footer_rights: "Todos os direitos reservados.",
+                footer_developed: "Desenvolvido por"
             },
             es: {
                 badge_atacado: "Mayorista | Minorista | Exportación",
@@ -244,7 +318,8 @@
                 footer_contact_title: "Haz tu pedido",
                 footer_location_title: "Estamos ubicados en",
                 btn_map: "Ver en el Mapa",
-                footer_rights: "Todos los derechos reservados."
+                footer_rights: "Todos los derechos reservados.",
+                footer_developed: "Desarrollado por"
             }
         };
 
@@ -253,7 +328,7 @@
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 if (translations[lang] && translations[lang][key]) {
-                    el.innerHTML = translations[lang][key]; // innerHTML to parse the <br> and spans
+                    el.innerHTML = translations[lang][key]; 
                 }
             });
 
